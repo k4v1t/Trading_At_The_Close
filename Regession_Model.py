@@ -8,9 +8,9 @@ class RegressionModel:
     def __init__(self, train_x, train_y, test_x, test_y):
         
         self.train_x = train_x
-        self.train_y = train_y.ravel()
+        self.train_y = train_y
         self.test_x = test_x
-        self.test_y = test_y.ravel()
+        self.test_y = test_y
         self.reg = None
     
     def fit_model(self, model_name, reg_alpha = 1.0, reg_l1_ratio = 0.5):
